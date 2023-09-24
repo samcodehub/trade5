@@ -1,0 +1,502 @@
+
+
+
+
+ 
+/********************************************** NAVIGATION BAR **********************************************/
+
+
+.navbar-nav .nav-link:hover{
+    color:rgba(255, 255, 255, 0.675)!important;
+}
+
+.navbar-brand {
+    
+   
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/********************************************** LANDING PAGE **********************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+
+.sp-container h2.frame-1 {
+  font-size: 140px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+ 
+}
+
+
+.section1 h1{
+  margin: 0;
+  font-size: 150px;
+  color: #e1e1e103;
+  background-image: url("cl.jpeg");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+
+
+.background-video0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
+
+/* SECTION ONE 1 */
+
+
+
+/********************************************** SECTION TWO 2 ABOUT US************************************ */
+@keyframes moveBackground {
+  0%, 100% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center 50px;
+  }
+}
+
+.section2 {
+  height: 120vh;
+  width: 100vw;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: moveBackground 5s infinite alternate; 
+}
+
+
+.cards {
+  display: flex;
+  gap: 25px;
+}
+
+article {
+  position: relative;
+  perspective: 1000px;
+  width: 30vw;
+  height: 70vh;
+  background:#ffffff00;
+}
+
+article header .material-symbols-outlined {
+  display: flex;
+  justify-content:flex-end;
+  align-items: end;
+  height: 40px;
+ 
+}
+
+
+
+article .front,
+article .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  backface-visibility: hidden;
+  background: #ffffff00;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  padding: 10px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#summary input {
+  position: absolute;
+  scale: 0;
+}
+
+input:checked ~ article .back {
+  transform: rotateY(0);
+}
+
+input:checked ~ article .front {
+  transform: rotateY(-180deg);
+}
+
+
+.back{
+  background: rgba(2, 0, 36, 0)!important;
+ 
+}
+
+
+
+.back p {
+  font-size: 1rem;
+  transform: rotateY(-180deg);
+  display: none;
+  text-align: start;
+  overflow: auto;
+  color: #fff;
+}
+
+input:checked ~ article .back p {
+  display: block;
+}
+
+
+
+
+
+/***************************************** SECTION FIVE 5 STRATEGIES RANKING*****************************/
+
+/***************************************** SECTION SEVEN 7 STRATEGIES SYSTEM TILES**************************/
+#systemtile{
+  height: 130vh;
+  width: 100vw;
+}
+
+#systemTile140372245{
+  margin-right: 20px;
+  
+}
+/* System Name */
+#systemTile140372245 .c2SysName {
+  color: blue; /* Change this to your desired font color */
+}
+
+/* Trade Stats */
+#systemTile140372245 .c2tilestats .c2tilestat,
+#systemTile140372245 .c2tilestats .c2tilestatval {
+  color: rgb(236, 237, 236); /* Change this to your desired font color */
+}
+
+#systemTile145124170 .c2tilestats .c2tilestat,
+#systemTile145124170 .c2tilestats .c2tilestatval {
+  color: rgb(236, 237, 236); /* Change this to your desired font color */
+}
+
+/* Warning Message */
+#systemTile140372245 .c2HypoWarn {
+  color: #faf4f4; /* Change this to your desired font color */
+}
+#systemTile145124170 .c2HypoWarn {
+  color: #faf4f4; /* Change this to your desired font color */
+}
+
+/* Subscribe Price */
+#systemTile140372245 .c2SubTxt .c2subPrice {
+  color: #fad104; /* Change this to your desired font color */
+}
+
+#systemTile145124170 .c2SubTxt .c2subPrice {
+  color: #fad104; /* Change this to your desired font color */
+}
+
+/* More Details Button */
+#systemTile140372245 .c2DetailsBtn img {
+  box-shadow: none; /* Remove the box shadow if desired */
+}
+/***************************************** SECTION SEVEN 7 STRATEGIES SYSTEM TILES**************************/
+/***************************************** SECTION EIGHT 8 STRATEGIES MONTHLY*************************/
+
+/***************************************** SECTION EIGHT 8 STRATEGIES MONTHLY*************************/
+/***************************************** SECTION NINE 9 FAQ**************************************/
+#FAQ {
+  height: 110vh;
+  position: relative;
+ 
+}
+
+.background-video3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#faq{
+  height:70vh;
+}
+
+
+
+.accordion {
+  background-color: #eeeeee00;
+  color: #eaeaea;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+  background-color: #cccccc00;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #f2f2f2;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgba(255, 255, 255, 0);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+
+
+/***************************************** SECTION NINE 9 FAQ**************************************/
+
+/***************************************** SECTION ELEVEN 11 NEWSLETTER**************************************/
+#newsletter{
+  height: 100vh;
+}
+
+.newsletter{
+  width: 70vw;
+  height: 60vh;
+  display:flex;
+  align-items: center;
+  background-image: linear-gradient(171.8deg, rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6%);
+  border-radius: 50px;
+}
+
+.alert {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(128, 212, 131);
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+/***************************************** SECTION ELEVEN 11 NEWSLETTER**************************************/
+
+
+/************************************ WHATSAPP ICON *************************************************/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: #25d366;
+    cursor: pointer;
+  }
+  .whatsapp-icon:hover{
+    text-shadow: 0 0 40px rgba(160, 160, 160, 0.818);
+    scale:1.1;
+    transition:1s;
+  }
+
+
+  .heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+/************************************ WHATSAPP ICON *************************************************/
+
+
+
+
+
+
+#why{
+  height: 110vh;
+}
+
+#why ul li{
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 578px){
+   
+
+}
+
+@media only screen and (min-width: 579px) and (max-width: 991px) {
+    
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+   
+}
+
+@media only screen and (min-width: 1201px){
+    
+}
